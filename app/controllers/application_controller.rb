@@ -22,11 +22,11 @@ class ApplicationController < Sinatra::Base
     @posts = Post.all
     erb :index
   end
-
-  get '/posts/:id' do
-    @post = Post.find(params[:id])
-    erb :show
-  end
+  # 
+  # get '/posts/:id' do
+  #   @post = Post.find(params[:id])
+  #   erb :show
+  # end
   #
   # #UPDATE
   # get '/posts/:id/edit' do
